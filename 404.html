@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Страница не найдена — Гермес</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#0F2E2C">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon.png" sizes="32x32" type="image/png">
+<link rel="stylesheet" href="fonts.css">
+<style>
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;min-height:100vh;display:grid;place-items:center;
+  padding:2rem clamp(1.25rem,5vw,5rem);background:#0F2E2C;color:#EAF0EE;
+  font-family:"Golos Text",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+  line-height:1.6;-webkit-font-smoothing:antialiased}
+.mono{font-family:"Martian Mono",ui-monospace,Menlo,monospace;font-weight:600;
+  font-size:.6875rem;letter-spacing:.14em;text-transform:uppercase}
+main{max-width:34rem}
+.eyebrow{display:flex;align-items:center;gap:.7em;color:#E2AF5C;margin:0 0 1.6rem}
+.eyebrow::before{content:"";width:1.6rem;height:1px;background:currentColor;opacity:.6}
+h1{margin:0;font-size:clamp(2rem,1.4rem + 2.8vw,3.35rem);font-weight:900;
+  letter-spacing:-.04em;line-height:1;color:#fff}
+p{margin:1.4rem 0 0;color:#B9C6C2}
+.row{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:2.4rem}
+a.btn{display:inline-flex;align-items:center;padding:.95em 1.6em;border-radius:2px;
+  border:1px solid transparent;text-decoration:none;font-weight:600;font-size:.9375rem;
+  transition:transform 160ms cubic-bezier(.23,1,.32,1),background-color 180ms ease,border-color 180ms ease}
+a.btn:active{transform:scale(.97)}
+a.btn.p{background:#B57E28;color:#1A1204;border-color:#B57E28}
+a.btn.g{border-color:rgba(255,255,255,.32);color:inherit}
+@media (hover:hover) and (pointer:fine){
+  a.btn.p:hover{background:#E2AF5C;border-color:#E2AF5C}
+  a.btn.g:hover{background:rgba(255,255,255,.09);border-color:rgba(255,255,255,.6)}
+}
+a:focus-visible{outline:2px solid #E2AF5C;outline-offset:3px}
+</style>
+</head>
+<body>
+<main>
+  <p class="mono eyebrow">Ошибка 404</p>
+  <h1>Такой страницы нет</h1>
+  <p>Ссылка устарела или в адресе опечатка. Всё, что есть на сайте, помещается на одну страницу — вернитесь на главную.</p>
+  <div class="row">
+    <a class="btn p" href="./">На главную</a>
+    <a class="btn g" href="tel:88007006997">8 800 700-69-97</a>
+  </div>
+</main>
+</body>
+</html>
